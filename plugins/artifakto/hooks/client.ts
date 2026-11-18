@@ -926,10 +926,10 @@ async function readConfig(io: Io): Promise<{ path: string; doc: ConfigDoc }> {
     const path = configFileOf(io.env);
     throw new ClientError(
       "config_missing",
-      `The artifakto CLI has no config file on this computer yet${path === null ? "" : ` (${path})`}. The plugin makes one only you can read when a session starts, and needs Node 22.12 or newer for that: start a new Claude Code session, then /artifakto-login again. If it is still missing after that, run /artifakto:mirror, whose first check makes it too, then /artifakto-login again.`,
+      `The artifakto CLI has no config file on this computer yet${path === null ? "" : ` (${path})`}. The plugin makes one only you can read when a session starts, and needs Node 22.12 or newer for that: restart Claude Code, then /artifakto-login again. If it is still missing after that, run /artifakto:mirror, whose first check makes it too, then /artifakto-login again.`,
     );
   }
-  if (config.doc === null) throw new ClientError("config_invalid", `${config.path} is not a JSON object: fix or remove it, start a new Claude Code session, then /artifakto-login again.`);
+  if (config.doc === null) throw new ClientError("config_invalid", `${config.path} is not a JSON object: fix or remove it, restart Claude Code, then /artifakto-login again.`);
   return { path: config.path, doc: config.doc };
 }
 
