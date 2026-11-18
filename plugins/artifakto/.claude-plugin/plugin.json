@@ -1,0 +1,17 @@
+{
+  "name": "artifakto",
+  "description": "Mirror Claude Code artifacts and local HTML files to artifakto.ai or your self-hosted instance, and hand Claude Code sessions back and forth through members-only threads.",
+  "author": {
+    "name": "highvoltag3",
+    "url": "https://github.com/highvoltag3"
+  },
+  "homepage": "https://artifakto.ai",
+  "repository": "https://github.com/highvoltag3/artifakto-plugin",
+  "license": "MIT",
+  "keywords": [
+    "artifacts",
+    "sharing",
+    "html"
+  ],
+  "types": "./types/index.d.ts"
+}

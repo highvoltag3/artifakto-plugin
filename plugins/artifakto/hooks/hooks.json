@@ -1,0 +1,6 @@
+{
+  "modules": ["./threads.tsx"],
+  "hooks": {
+    "SessionStart": [{ "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/artifakto.mjs\" prepare" }] }]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "artifakto",
+  "owner": { "name": "highvoltag3", "url": "https://github.com/highvoltag3" },
+  "description": "Mirror AI-made HTML pages to a domain you own.",
+  "plugins": [
+    {
+      "name": "artifakto",
+      "source": "./plugins/artifakto",
+      "description": "Mirror Claude Code artifacts and local HTML files to artifakto.ai or your self-hosted instance, and hand Claude Code sessions back and forth through members-only threads.",
+      "category": "productivity",
+      "tags": ["artifacts", "sharing", "html"]
+    }
+  ]
+}
